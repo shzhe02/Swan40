@@ -221,4 +221,14 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 90 180 180))
   )
+  (model "${KIPRJMOD}/assets/kailh_choc_v1_hotswap/MBK_Keycap_-_1u.step"
+    (offset (xyz 0 0 6.25))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/assets/kailh_choc_v1_hotswap/kailh_choc.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
 )

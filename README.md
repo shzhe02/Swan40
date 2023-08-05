@@ -17,5 +17,11 @@ Asset credits:
     - Located in the directory: /assets/xiao_nrf52840
 - [Kailh 1350 Socket (Choc V1 Hotswap sockets) STEP model - by Dennis Lee](https://grabcad.com/library/kailh-1350-socket-2)
     - Located in the directory: /assets/kailh_choc_v1_hotswap
+- [MBK Choc Low Profile 1u keycap STEP model - by darryldh](https://www.thingiverse.com/thing:4564253)
+    - Located in the directory: /assets/kailh_choc_v1_hotswap
+- [MSK-12C02 SMD Slider Switch Footprint - by mzst](https://mzstblog.blogspot.com/2016/01/msk-12c02-smd-slider-switch-spdt-eagle.html)
+    - Located in the directory: /assets/MSK-12C02
 
-Note: Many footprints were modified by me, so if something's broken, it might be my fault, not the original creators'.
+---
+
+Note: Modifications were made to many of the assets.
