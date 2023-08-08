@@ -173,7 +173,8 @@
       ],
       "track_widths": [
         0.0,
-        0.254
+        0.25,
+        0.5
       ],
       "via_dimensions": [
         {
@@ -440,7 +441,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../var/home/kiro/Documents/rv/Swan40/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
