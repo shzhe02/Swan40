@@ -1,4 +1,4 @@
-13425527118442
+26953073828963
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90636,6 +90636,13 @@ varistor
 2
 2
 kbd
+0.5mm_hole
+
+
+0
+0
+0
+kbd
 1pad_conn_board
 Resitance 3 pas
 R
@@ -90663,6 +90670,55 @@ R
 0
 2
 2
+kbd
+M2_HOLE
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+1
+0
+kbd
+M2_HOLE_v2
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+0
+0
+kbd
+M2_HOLE_v3
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+9
+1
+kbd
+M2_Hole_NPTH_Outside
+
+
+0
+0
+0
+kbd
+M2_Hole_TH
+
+
+0
+1
+0
+kbd
+M2_Hole_TH_Outside
+
+
+0
+1
+0
+kbd
+M2_Threads_v2
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+1
+0
 xiao_nrf52840
 xiao_nrf52840
 
