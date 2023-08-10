@@ -28,5 +28,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PCB_output
-          path: pcb/output
+          path: |
+            pcb/output/
           if-no-files-found: warn
