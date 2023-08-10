@@ -1,16 +1,16 @@
 name: 'Swan40 PCB CI/CD'
 
-on:
-  push:
-    paths:
-      - '*.kicad_sch'
-      - '*.kicad_pcb'
-      - '*.kibot.yaml'
-  pull_request:
-    paths:
-      - '*.kicad_sch'
-      - '*.kicad_pcb'
-      - '*.kibot.yaml'
+on: [push, pull_request]
+  # push:
+  #   paths:
+  #     - '*.kicad_sch'
+  #     - '*.kicad_pcb'
+  #     - '*.kibot.yaml'
+  # pull_request:
+  #   paths:
+  #     - '*.kicad_sch'
+  #     - '*.kicad_pcb'
+  #     - '*.kibot.yaml'
 
 jobs:
   export_pcb:
