@@ -22,7 +22,7 @@ jobs:
           config: config.kibot.yaml
           dir: pcb/output
           schema: 'Swan40.kicad_sch'
-          board: 'Swan40_rounded.kicad_pcb'
+          board: 'Swan40-rounded.kicad_pcb'
       - name: Retrieve results
         if: ${{ always() }}
         uses: actions/upload-artifact@v3
