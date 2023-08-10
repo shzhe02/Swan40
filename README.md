@@ -4,8 +4,9 @@ A custom 40-key split keyboard. Heavily inspired by the Ferris Sweep and Corne
 
 Notable features:
 - Uses Choc v1 switches and corresponding Kailh hotswap sockets.
-- Built around the XIAO nRF52840 (**not the sense version**)
+- Built around the XIAO nRF52840
 - Massive potential battery capacity due to unique controller mounting position.
+    - Up to 102050 Lipo battery (1000mAh)
 - Runs on ZMK
 
 ---
