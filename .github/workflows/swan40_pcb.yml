@@ -19,4 +19,14 @@ jobs:
       - uses: actions/checkout@v3
       - uses: INTI-CMNB/KiBot@v2_k7
         with:
-          config:
+          config: pcb_export.kibot.yaml
+          dir: pcb/output
+          schema: 'Swan40.kicad_sch'
+          board: 'Swan40.kicad_pcb'
+      - name: Retrieve results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: PCB_output
+          path: pcb/output
+          if-no-files-found: warn
