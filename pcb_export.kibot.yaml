@@ -1,0 +1,79 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: false
+  ignore_unconnected: false
+
+global:
+  output: '%f-%i_%r.%x'
+
+import:
+  - configs/JLCPCB.kibot.yaml
+
+filters:
+ - name: 'exclude_any'
+   type: 'generic'
+   comment: 'Exclude logos, testpoints, fiducials and power'
+   exclude_any:
+     - column: Reference
+       regex: '^(G|#|TP|F).*'
+
+outputs:
+  - name: 'gerbers'
+    comment: "Gerbers for the board house"
+    type: gerber
+    dir: Gerbers
+    options:
+      # generic layer options
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: false
+      use_aux_axis_as_origin: false
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: true
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+
+      # gerber options
+      line_width: 0.1
+      subtract_mask_from_silk: false
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: true
+      use_gerber_x2_attributes: true
+      use_gerber_net_attributes: true
+
+    layers:
+      - layer: F.Cu
+        suffix: F_Cu
+      - layer: B.Cu
+        suffix: B_Cu
+      - layer: F.Paste
+        suffix: F_Paste
+      - layer: B.Paste
+        suffix: B_Paste
+      - layer: F.SilkS
+        suffix: F_SilkS
+      - layer: B.SilkS
+        suffix: B_SilkS
+      - layer: F.Mask
+        suffix: F_Mask
+      - layer: B.Mask
+        suffix: B_Mask
+      - layer: Dwgs.User
+        suffix: Dwgs_User
+      - layer: Edge.Cuts
+        suffix: Edge_Cuts
+      - layer: F.Fab
+        suffix: F_Fab
+      - layer: B.Fab
+        suffix: B_Fab
+  - name: gerber_drills
+    comment: "Gerber drill files"
+    type: gerb_drill
+    dir: Drill
+    options:
+      use_aux_axis_as_origin: false
