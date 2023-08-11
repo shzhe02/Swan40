@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 38,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -25,7 +25,7 @@
       "text": true,
       "tracks": true,
       "vias": true,
-      "zones": false
+      "zones": true
     },
     "visible_items": [
       0,
@@ -68,7 +68,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Swan40.kicad_prl",
+    "filename": "Swan40-rounded.kicad_prl",
     "version": 3
   },
   "project": {

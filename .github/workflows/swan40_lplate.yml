@@ -1,0 +1,32 @@
+name: 'Swan40 Left Plate CI/CD'
+
+on: [push, pull_request]
+  # push:
+  #   paths:
+  #     - '*.kicad_sch'
+  #     - '*.kicad_pcb'
+  #     - '*.kibot.yaml'
+  # pull_request:
+  #   paths:
+  #     - '*.kicad_sch'
+  #     - '*.kicad_pcb'
+  #     - '*.kibot.yaml'
+
+jobs:
+  export_pcb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: config.kibot.yaml
+          dir: pcb/output
+          board: 'Swan40-rounded.kicad_pcb'
+      - name: Retrieve results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: PCB_output
+          path: |
+            pcb/output/
+          if-no-files-found: warn
