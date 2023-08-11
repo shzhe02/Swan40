@@ -12,13 +12,6 @@ filters:
       - column: 'LCSC#'
         regex: '^C\d+'
 
-variants:
-  - name: rotated
-    comment: 'Just a place holder for the rotation filter'
-    type: kibom
-    variant: rotated
-    pre_transform: _rot_footprint
-
 outputs:
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
