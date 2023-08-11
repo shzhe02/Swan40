@@ -64,52 +64,6 @@ outputs:
       route_mode_for_oval_holes: false
       output: "%f%i.%x"
 
-  - name: 'JLCPCB_position'
-    comment: "Pick and place file, JLCPCB style"
-    type: position
-    dir: JLCPCB
-    options:
-      variant: rotated
-      output: '%f_cpl_jlc.%x'
-      format: CSV
-      units: millimeters
-      separate_files_for_front_and_back: false
-      only_smd: true
-      columns:
-        - id: Ref
-          name: Designator
-        - Val
-        - Package
-        - id: PosX
-          name: "Mid X"
-        - id: PosY
-          name: "Mid Y"
-        - id: Rot
-          name: Rotation
-        - id: Side
-          name: Layer
-
-  - name: 'JLCPCB_bom'
-    comment: "BoM for JLCPCB"
-    type: bom
-    dir: JLCPCB
-    options:
-      output: '%f_%i_jlc.%x'
-      exclude_filter: 'only_jlc_parts'
-      ref_separator: ','
-      columns:
-        - field: Value
-          name: Comment
-        - field: References
-          name: Designator
-        - Footprint
-        - field: 'LCSC#'
-          name: 'LCSC Part #'
-      csv:
-        hide_pcb_info: true
-        hide_stats_info: true
-        quote_all: true
-
   - name: JLCPCB
     comment: ZIP file for JLCPCB
     type: compress
@@ -119,8 +73,4 @@ outputs:
         - from_output: JLCPCB_gerbers
           dest: /
         - from_output: JLCPCB_drill
-          dest: /
-        - from_output: JLCPCB_position
-          dest: /
-        - from_output: JLCPCB_bom
           dest: /
