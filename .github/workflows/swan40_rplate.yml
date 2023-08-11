@@ -1,4 +1,4 @@
-name: 'Swan40 PCB CI/CD'
+name: 'Swan40 Right Plate CI/CD'
 
 on: [push, pull_request]
   # push:
