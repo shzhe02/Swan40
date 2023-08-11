@@ -1,4 +1,4 @@
-20295439256531
+21987204392517
 MSK-12C02
 MSK-12C02
 Footprint of the VIMEX MSK-12C02 SPDT SMD Switch{return}Created by mzst on 17-Jan-2016
@@ -36,6 +36,13 @@ kbd
 0
 kbd
 5mm_hole
+
+
+0
+0
+0
+kbd
+5x3mm_mouse_bite
 
 
 0
