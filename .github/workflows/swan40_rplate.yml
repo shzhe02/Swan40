@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: INTI-CMNB/KiBot@v2_k7
         with:
-          config: config.kibot.yaml
+          config: configs/config.kibot.yaml
           dir: pcb/output
           board: 'right-plate/right-plate.kicad_pcb'
       - name: Retrieve results
