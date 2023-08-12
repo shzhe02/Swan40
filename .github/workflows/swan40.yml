@@ -65,3 +65,20 @@ jobs:
           path: |
             rplate/output/
           if-no-files-found: warn
+  export-plate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: configs/config.kibot.yaml
+          dir: plate/output
+          board: 'plate/plate.kicad_pcb'
+      - name: Retrieve results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: Swan40-plate
+          path: |
+            plate/output/
+          if-no-files-found: warn

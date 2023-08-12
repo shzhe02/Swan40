@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 36,
-    "active_layer_preset": "",
+    "active_layer": 38,
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -64,11 +64,11 @@
       39,
       40
     ],
-    "visible_layers": "ffbffff_7ffffffe",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Swan40-rounded.kicad_prl",
+    "filename": "left-plate.kicad_prl",
     "version": 3
   },
   "project": {
