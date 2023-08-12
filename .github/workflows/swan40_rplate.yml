@@ -21,7 +21,7 @@ jobs:
         with:
           config: config.kibot.yaml
           dir: pcb/output
-          board: 'Swan40-rounded.kicad_pcb'
+          board: 'right-plate/right-plate.kicad_pcb'
       - name: Retrieve results
         if: ${{ always() }}
         uses: actions/upload-artifact@v3
