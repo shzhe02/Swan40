@@ -2,6 +2,8 @@
 
 My first attempt at designing a custom sleek split keyboard.
 
+Heavily inspired by the [Corne](https://github.com/foostan/crkbd) and [Ferris Sweep](https://github.com/davidphilipbarr/Sweep).
+
 More extensive write-up (in progress): https://shzhe02.com/projects/swan40
 
 Features:
