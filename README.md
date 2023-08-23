@@ -6,6 +6,11 @@ Heavily inspired by the [Corne](https://github.com/foostan/crkbd) and [Ferris Sw
 
 More extensive write-up (in progress): https://shzhe02.com/projects/swan40
 
+The provided ZMK config is essentially:
+- 80% [Corne default zmk config and keymap](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/corne)
+- 10% [Pnohty config for the Ferris Sweep](https://github.com/rayduck/zmk-config)
+- 10% Manual configuration for the Swan40
+
 Features:
 - Uses the XIAO nRF528420 microcontroller
 - Up to 1000 mAh lipo battery without tenting (with 102050 lipo)
@@ -60,5 +65,6 @@ Credits:
     - Located in the directory: pcb/assets/kailh_choc_v1_hotswap
 - [MSK-12C02 SMD Slider Switch Footprint - by mzst](https://mzstblog.blogspot.com/2016/01/msk-12c02-smd-slider-switch-spdt-eagle.html)
     - Located in the directory: pcb/assets/MSK-12C02
+- Rayduck and Foostan for the ZMK config
 
 Note: Modifications were made to many of the assets.
