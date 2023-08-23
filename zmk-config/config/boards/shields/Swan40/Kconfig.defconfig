@@ -1,0 +1,16 @@
+if SHIELD_SWAN40_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Swan40"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SWAN40_LEFT || SHIELD_SWAN40_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

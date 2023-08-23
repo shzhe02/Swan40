@@ -1,0 +1,10 @@
+file_format: "1"
+id: swan40
+name: Swan40
+type: shield
+url: https://github.com/shzhe02/Swan40
+requires:
+  - xiao_ble
+siblings:
+  - swan40_left
+  - swan40_right
