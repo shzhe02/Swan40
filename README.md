@@ -31,6 +31,8 @@ BOM:
 - 40x MBK keycaps (or compatible keycaps of your choice)
 - (Optional) 2x MBK homing keycaps (In this case, only 38 normal keycaps are needed)
 
+Optional (but recommended) case: https://www.printables.com/model/561315-swan40-case
+
 Case BOM:
 - 3x M2 (OD 3.2mm) x 4mm brass inserts
 - 3x M2 x 5mm screws (preferrably button head torx (or hex))
