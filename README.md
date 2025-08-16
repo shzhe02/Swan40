@@ -50,11 +50,19 @@ Wiring notes:
   - Un-tape the taped wire and solder it to the other battery pad on the PCB.
   - Remove the tape on the other pad, and cover both pads with electrical tape.
 
-Potential future improvements:
-- [ ] Make main PCB reversible
-- [ ] Change lipo connection SMD pads to an SMD micro JST 1.25 connector
-- [ ] Figure out a safer (more foolproof) method to connect battery pads of the controller to the PCB.
-- [ ] Design a smaller battery cover for the 500 mAh 602035 lipo
+~~Potential future improvements:~~
+~~- [ ] Make main PCB reversible~~
+~~- [ ] Change lipo connection SMD pads to an SMD micro JST 1.25 connector~~
+~~- [ ] Figure out a safer (more foolproof) method to connect battery pads of the controller to the PCB.~~
+~~- [ ] Design a smaller battery cover for the 500 mAh 602035 lipo~~
+
+No further hardware development will be done. The keyboard works great for me, but I have a few things I dislike about the board (in no particular order):
+1. Bluetooth connections are unreliable, both in the pairing process and during operation. While pairing, this keyboard often just refuses to connect to my computer until I clear all profiles, which is quite annoying. During operation, just playing a phone next to the keyboard adds considerable latency.
+2. The shift key is placed too low, which means situations where I must hold the key down for a long time or press it many times are uncomfortable.
+3. The cables required to connect the battery to the XIAO board. It requires the case to add otherwise unneccessary height below the PCB for clearance, not to mention that it requires insulation around the contacts to protect agasint battery short circuiting.
+4. Dust collects on the non-switch parts of the PCBs.
+
+Any future work will be done on brand new keyboard designs that hopefully address these issues.
 
 Credits:
 - [foostan's kbd KiCad Library/Symbols/3D Models](https://github.com/foostan/kbd/tree/crkbd4)
